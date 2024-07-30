@@ -148,7 +148,7 @@ header .shoping-cart
 {
     border: 1px solid ;
     position: absolute;
-    top:100%;
+    top:110%;
     /* right:2rem; */
     right: -110%;
     padding: 1rem;
@@ -239,6 +239,7 @@ header .shoping-cart .total
     border: .2rem solid var(--black);
     border-radius:1rem;
     color: var(--black);
+    background: none;
 }
 .btn:hover
 {
@@ -255,4 +256,61 @@ header .shoping-cart .btn
 
 }
 
+.header .login-form
+{
+    border: 0px solid;
+    position:absolute;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    top : 100%;
+    padding:2rem;
+    border-radius: 1rem;
+    background: #fff;
+    text-align: center;
+    width: 35rem;
+
+}
+.header .login-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3
+{
+    font-size:2.5rem;
+    text-transform: uppercase;
+    color:var(--balack);
+
+}
+
+
+.header .login-form .box
+{
+    border:0px solid black;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius:0.5rem;
+    padding: 1rem;
+    font: size 1.6rem;
+    color: var(--balack);
+    text-transform: none;
+    width:100%;
+}
+
+.header .login-form p
+{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color: var(--light-clolor);
+}
+
+.header .login-form p a
+{
+    /* font-size: 1.4rem;
+    padding:.5rem 0; */
+    color:var(--green);
+    text-decoration: underline;
+
+}
 
