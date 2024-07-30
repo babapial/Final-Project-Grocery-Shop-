@@ -76,6 +76,19 @@ body
     color: var(--green);
 }
 
+/* menu btton */
+
+#menu-btn
+{
+    display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
 .header .icons div
 {
     border: 0px solid black;
@@ -312,5 +325,122 @@ header .shoping-cart .btn
     color:var(--green);
     text-decoration: underline;
 
+}
+
+
+/* banner style */
+section
+{
+    padding:2rem 9%; 
+
+}
+
+.home 
+{
+    display: flex;
+    justify-content: center;
+    border:1px solid;
+    background: url(/image/banner-img.jpg) no-repeat;
+    background-position: cneter;
+    background-size: cover;
+    padding-top:17rem;
+    padding-bottom:10rem ;
+
+}
+
+.home .content
+{
+    border:0px solid ;
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3
+{
+    color: var(--balack);
+    font-size: 3rem;
+}
+
+.home .content h3 span
+{
+    color: var(--green);
+    
+}
+
+.home .content p
+{
+    color: var(--light-clolor);
+    font-size: 1.7rem;
+    padding:1.5rem;
+    line-height: 1.8;
+
+
+
+    
+}
+
+
+
+
+
+
+/* media query */
+@media (max-width: 991px)
+{
+    html
+    {
+    font-size: 55%;
+    }
+    .header
+    {
+        padding:2rem;
+    }
+    section
+    {
+        padding:2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+    .header .navbar
+    {
+        position : absolute;
+        top: 110%;
+        right:-110rem;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius:0.5rem;
+        background:#fff;
+
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin:2rem 2.5 rem;
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+    font-size: 55%;
+    
+    }
 }
 
