@@ -5,7 +5,7 @@
     --green:rgb(30, 100, 30);
     --black:#000000;
     --light-clolor:#666;
-    --box-shadow:0.1rem 1rem rgba(209, 163, 163, 0.1);
+    --box-shadow:0.1rem 1rem rgba(0, 0, 0, 0.1);
     --border:2rem solid rgba(0,0,0,0.1);
     --outline:.1rem solid rgba(0,0,0,0.1);
 }
@@ -51,6 +51,24 @@ body
     padding: 2rem 9%;
     background-color: #fff;
     box-shadow:var(--box-shadow);
+
+}
+.heading
+{
+    text-align: center;
+    padding: 3rem 0 ;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--balack);
+}
+
+.heading span
+{
+    background:var(--green);
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0 ,93% 50%,100% 99%,0% 100%,7% 50% , 0% 0%);
 
 }
 
@@ -339,7 +357,7 @@ section
 {
     display: flex;
     justify-content: center;
-    border:1px solid;
+    border:0px solid;
     background: url(/image/banner-img.jpg) no-repeat;
     background-position: cneter;
     background-size: cover;
@@ -373,10 +391,56 @@ section
     font-size: 1.7rem;
     padding:1.5rem;
     line-height: 1.8;
+}
+
+.features .box-container
+{
+    border: 0px solid ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.features .box-container .box
+{
+    border: 0px solid ;
+    padding :3rem 2rem;
+    background: #fff;
+    outline:var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--);
+}
+
+.features .box-container .box:hover
+{
+    box-shadow: 1px 2px 10px 4px var(--green);
+}
+
+.features .box-container .box img
+{
+    margin : 1rem 0 ;
+    height : 15rem;
+}
+
+.features .box-container .box h3
+{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--balack);
 
 
+}
 
+.features .box-container .box p
+{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-clolor);
+    padding: 1rem 0 ;
     
+    
+
 }
 
 
@@ -439,8 +503,13 @@ section
 {
     html
     {
-    font-size: 55%;
+    font-size: 50%;
     
+    }
+    .heding 
+    {
+        font-size: 2.5rem;
+
     }
 }
 
