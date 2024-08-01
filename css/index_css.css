@@ -6,7 +6,7 @@
     --black:#000000;
     --light-clolor:#666;
     --box-shadow:0.1rem 1rem rgba(0, 0, 0, 0.1);
-    --border:2rem solid rgba(0,0,0,0.1);
+    --border:.2rem solid rgba(0,0,0,0.1);
     --outline:.1rem solid rgba(0,0,0,0.1);
 }
 
@@ -710,6 +710,93 @@ section
 
 
 /*review part is this */
+
+
+
+/* blog part is this  start*/
+
+
+.blog .box-container
+{
+    border: 0px solid ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap:1.5rem;
+}
+
+.blog .box-container .box
+{
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+
+}
+
+.blog .box-container .box img
+{
+    height:25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog .box-container .box .contain
+{
+    border: 0px solid;
+    padding: 2rem;
+}
+
+.blog .box-container .box .contain .icons
+{
+    border: 0px solid blue;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom:1rem;
+    border-bottom: var(--light-clolor);
+}
+
+.blog .box-container .box .contain .icons a
+{
+    color:var(--light-clolor);
+    font-size:1.5rem;
+}
+
+.blog .box-container .box .contain .icons a i
+{
+    color:var(--green);
+    font-size:2rem;
+}
+.blog .box-container .box .contain .icons a:hover
+{
+    color:var(--black);
+}
+.blog .box-container .box .contain h3{
+    line-height: 1.8;
+    color:valr(--black);
+    font-size:1.5rem;
+    padding:.5rem 0 ;
+    text-align: center;
+
+}
+
+.blog .box-container .box .contain
+{
+    line-height: 1.8;
+    color:valr(--light-clolor);
+    font-size:1.5rem;
+    padding:.5rem 0 ;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* blog part is this  end*/
 
 
 
