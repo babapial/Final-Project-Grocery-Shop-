@@ -61,3 +61,89 @@ window.onscroll = () =>
     
 }
 
+
+
+
+
+
+
+var swiper = new Swiper(".product-slider", {
+ //   slidesPerView: 1,
+    loop:true,
+    spaceBetween: 20,
+    autoPlay: 
+    {
+        delay : 7500,
+        disableOnInteraction:false,
+    },
+   
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        //spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        //spaceBetween: 20,
+      },
+    //   "@1.00": {
+    //     slidesPerView: 3,
+    //     //spaceBetween: 40,
+    //   },
+      1020: {
+        slidesPerView: 3,
+        //spaceBetween: 50,
+      
+    },
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var swiper = new Swiper(".product-slider", {
+//     loop:true,
+//     spaceBetween: 20,
+//     autoplay: 
+//     {
+//         delay:7500,
+//         disableOnInteraction:false,
+
+//     }
+
+//     breakpoints: {
+//       "0": {
+//         slidesPerView: 1,
+
+//       },
+    
+//       "768": {
+//         slidesPerView: 3,
+//         spaceBetween: 40,
+//       },
+//       "1020": {
+//         slidesPerView: 3,
+        
+//       },
+//     },
+// });
+  
+
